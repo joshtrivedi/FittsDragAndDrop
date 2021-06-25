@@ -1,0 +1,7 @@
+#Tue Mar 20 11:14:12 EDT 2018
+base.0=C\:\\Users\\mack\\Desktop\\Scott-new\\Java\\AndroidStudioStuff\\FittsDragAndDrop\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_bc118d9a777e4137b3ea6ff21881c30979e415f1
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\mack\\Desktop\\Scott-new\\Java\\AndroidStudioStuff\\FittsDragAndDrop\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_735eb7402bd81238f04485f4389a9914fd29ddf0\\classes.dex
+base.1=C\:\\Users\\mack\\Desktop\\Scott-new\\Java\\AndroidStudioStuff\\FittsDragAndDrop\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_735eb7402bd81238f04485f4389a9914fd29ddf0
+file.0=C\:\\Users\\mack\\Desktop\\Scott-new\\Java\\AndroidStudioStuff\\FittsDragAndDrop\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_bc118d9a777e4137b3ea6ff21881c30979e415f1\\classes.dex

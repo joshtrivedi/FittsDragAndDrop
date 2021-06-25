@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FittsDragAndDrop</string>
+    <string name="button01text">OK</string>
+    <string name="button02text">Save</string>
+    <string name="button03text">Exit</string>
+    <string name="hello">FittsDragAndDropActivity</string>
+    <string name="paramauditoryfeedbacktext">Auditory feedback</string>
+    <string name="paramfittsfarmstyletext">Fitts Farm style</string>
+    <string name="paramlabelamplitudetext">Target amplitude (A)</string>
+    <string name="paramlabelblocktext">Block code</string>
+    <string name="paramlabelconditiontext">Condition code</string>
+    <string name="paramlabelgrouptext">Group code</string>
+    <string name="paramlabelmode1d">1D</string>
+    <string name="paramlabelmode2d">2D</string>
+    <string name="paramlabelmodetext">Mode</string>
+    <string name="paramlabelparttext">Participant code</string>
+    <string name="paramlabelsesstext">Session code</string>
+    <string name="paramlabeltargetstext">Number of circles (2D)</string>
+    <string name="paramlabeltrialstext">Number of trials (1D)</string>
+    <string name="paramlabelwidthtext">Target width (W)</string>
+    <string name="paramshowalltargetstext">Show all targets</string>
+    <string name="paramspeechfeedbacktext">Speech feedback</string>
+    <string name="paramvibrotactilefeedbacktext">Vibrotactile feedback</string>
+    <string name="setup_subtitle">(FittsDragAndDrop Experiment)</string>
+    <string name="setup_title">Setup</string>
+</resources>

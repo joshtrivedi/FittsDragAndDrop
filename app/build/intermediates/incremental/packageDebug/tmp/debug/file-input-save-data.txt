@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Tue Jun 22 20:23:13 IST 2021
+0.base=C\:\\Users\\josht\\Downloads\\FittsDragAndDrop\\FittsDragAndDrop\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+count=1
+0.baseType=DIRECTORY
+0.set=DEX
