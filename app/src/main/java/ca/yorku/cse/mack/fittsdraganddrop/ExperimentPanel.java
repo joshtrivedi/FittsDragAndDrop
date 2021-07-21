@@ -44,7 +44,6 @@ public class ExperimentPanel extends View
     Bitmap apple, graphicTrial, graphicTrial2;
     Bitmap appleAndPig;
     Bitmap heatMap; // for finger contact point
-
     // edit the code below if new graphic images are added (make sure the two arrays are aligned)
     int[] graphicTargetId = {R.drawable.pig, R.drawable.chicken, R.drawable.cow, R.drawable.elephant, R.drawable
             .giraffe, R.drawable.horse, R.drawable.llama, R.drawable.lion, R.drawable.penguin, R.drawable.rhino, R

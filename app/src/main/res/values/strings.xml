@@ -23,6 +23,7 @@
     <string name="paramvibrotactilefeedbacktext">Vibrotactile feedback</string>
     <string name="paramauditoryfeedbacktext">Auditory feedback</string>
     <string name="paramspeechfeedbacktext">Speech feedback</string>
+    <string name="paramlabelorderofcontroltext">Order of control</string>
     <string name="paramfittsfarmstyletext">Fitts Farm style</string>
     <string name="paramshowalltargetstext">Show all targets</string>
 

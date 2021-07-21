@@ -51,7 +51,9 @@ public class FittsDragAndDropSetup extends Activity
     boolean speechFeedback = false;
     boolean fittsFarmStyle = true;
     boolean showAllTargets = true;
-
+    final String FLICKER = "Flicker";
+    final String DRAGANDDROP = "DragAndDrop";
+    String[] orderOfControlArray = {FLICKER, DRAGANDDROP};
     int screenOrientation;
     SharedPreferences sp;
     SharedPreferences.Editor spe;
@@ -63,7 +65,7 @@ public class FittsDragAndDropSetup extends Activity
     private CheckBox checkAuditoryFeedback, checkSpeechFeedback;
     private CheckBox checkFittsFarmStyle;
     private CheckBox checkShowAllTargets;
-
+    private Spinner spinOrderOfControl;
     /**
      * Called when the activity is first created.
      */
@@ -78,7 +80,8 @@ public class FittsDragAndDropSetup extends Activity
 		 * values.
 		 */
         sp = this.getPreferences(MODE_PRIVATE);
-
+        //For Flicker Setup in Drag and Drop - Spinner
+        orderOfControlArray[0]= sp.getString("orderOfControl",orderOfControlArray[0]);
 		/*
          * Overwrite 1st entry from shared preferences, if corresponding value exits.
 		 */
@@ -105,6 +108,8 @@ public class FittsDragAndDropSetup extends Activity
         Spinner spinBlock = (Spinner)findViewById(R.id.paramBlock);
         spinGroup = (Spinner)findViewById(R.id.paramGroup);
         spinCondition = (Spinner)findViewById(R.id.paramCondition);
+        //Spinner for Order of Control
+        spinOrderOfControl = (Spinner) findViewById(R.id.paramOrderOfControl);
         //spinMode = (Spinner) findViewById(R.id.paramMode);
         radioButtonMode1D = (RadioButton)findViewById(R.id.paramMode1D);
         RadioButton radioButtonMode2D = (RadioButton)findViewById(R.id.paramMode2D);
@@ -139,7 +144,10 @@ public class FittsDragAndDropSetup extends Activity
         ArrayAdapter<CharSequence> adapterC = new ArrayAdapter<CharSequence>(this, R.layout
                 .spinnerstyle, conditionCode);
         spinCondition.setAdapter(adapterC);
-
+        //Spinner for Order of Control
+        ArrayAdapter<CharSequence> adapterOC
+                = new ArrayAdapter<CharSequence>(this, R.layout.spinnerstyle, orderOfControlArray);
+        spinOrderOfControl.setAdapter(adapterOC);
         //ArrayAdapter<CharSequence> adapterM = new ArrayAdapter<CharSequence>(this, R.layout
         //       .spinnerstyle, dimensionMode);
         //spinMode.setAdapter(adapterM);
@@ -225,6 +233,8 @@ public class FittsDragAndDropSetup extends Activity
         boolean fittsFarmStyle = checkFittsFarmStyle.isChecked();
         boolean showAllTargets = checkShowAllTargets.isChecked();
 
+        String orderOfControl = orderOfControlArray[spinOrderOfControl.getSelectedItemPosition()];
+        //int gain = getGain(orderOfControl, gainString);
 		/*
          * NOTE: Activities are created by calling zero-parameter constructors. It is not possible
 		 * to directly pass arguments to Activities. Instead, primitive values can be "bundled" and
@@ -247,6 +257,7 @@ public class FittsDragAndDropSetup extends Activity
         b.putBoolean("fittsFarmStyle", fittsFarmStyle);
         b.putBoolean("showAllTargets", showAllTargets);
         b.putInt("screenOrientation", screenOrientation);
+        b.putString("orderOfControl", orderOfControl);
 
         // start experiment activity
         Intent i = new Intent(getApplicationContext(), FittsDragAndDropActivity.class);
@@ -272,6 +283,7 @@ public class FittsDragAndDropSetup extends Activity
         spe.putBoolean("speechFeedback", checkSpeechFeedback.isChecked());
         spe.putBoolean("fittsFarmStyle", checkFittsFarmStyle.isChecked());
         spe.putBoolean("showAllTargets", checkShowAllTargets.isChecked());
+        spe.putString("orderOfControl", orderOfControlArray[spinOrderOfControl.getSelectedItemPosition()]);
         spe.apply();
         Toast.makeText(this, "Preferences saved!", Toast.LENGTH_SHORT).show();
     }

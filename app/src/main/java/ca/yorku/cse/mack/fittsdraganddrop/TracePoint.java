@@ -1,6 +1,6 @@
 package ca.yorku.cse.mack.fittsdraganddrop;
 
-class TracePoint
+class 	TracePoint
 {
 	long t;
 	int x, y;

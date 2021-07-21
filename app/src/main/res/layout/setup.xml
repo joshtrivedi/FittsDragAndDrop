@@ -255,6 +255,21 @@
                     android:gravity="left"
                     android:textAppearance="?android:attr/textAppearanceMedium"/>
             </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/paramLabelOrderOfControl"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="@string/paramlabelorderofcontroltext"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/paramOrderOfControl"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
 
             <CheckBox
                 android:id="@+id/paramVibrotactileFeedback"
