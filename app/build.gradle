@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "ca.yorku.cse.mack.fittsdraganddrop"
         minSdkVersion 12
-        targetSdkVersion 23
+        targetSdkVersion 28
     }
 
     buildTypes {
